@@ -1,0 +1,11 @@
+{# roster/players_list.html #}
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>All Players</h2>
+    <ul>
+        {% for player in players %}
+            <li><a href="{% url 'roster_players' player.id %}">{{ player.number }}</a> | {{ player.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

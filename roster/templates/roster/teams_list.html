@@ -1,0 +1,11 @@
+{# roster/teams_list.html #}
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Softball Teams</h2>
+    <ul>
+        {% for team in teams %}
+            <li><a href="{% url 'roster_teams' team.name %}">{{ team.name }}</a> | {{ team.school }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
