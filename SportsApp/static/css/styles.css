@@ -1,0 +1,101 @@
+/* STYLES FOR SPORTS APP
+
+  Color Reference:
+
+  @carolina: #56A0D3;
+  @carolina-dark: darken(@carolina, 20%);
+  @carolina-light: lighten(@carolina, 20%);
+
+  @state: #CC0000;
+  @state-dark: darken(@state, 20%);
+  @state-light: lighten(@state, 20%);
+
+  @ecuPurple: #592A8A;
+  @ecuGold: #FDC82F;
+
+  @appGold: #FFCC00;
+  @appBlack: #222222;
+
+  @virginiaPurple: #660000;
+  @virginiaOrg: #FF6600;
+
+  */
+
+.footer{
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  background: #56A0D3;
+  padding: 15px 15px 15px 15px;
+}
+
+.fixnav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topThis{
+  margin-top: 70px;
+}
+
+.footer > p,
+.footer > p> a{
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.myThumb{
+  padding:20px;
+  margin: auto;
+  text-align: center;
+}
+
+.centerDis{
+  display: inline;
+  float: none;
+}
+
+.carolina{
+  background: #56A0D3;
+  min-height: 100px;
+}
+
+.carolina-dark{
+  background: #286c9b;
+  min-height: 100px;
+}
+
+.state{
+  background: #CC0000;
+  min-height: 100px;
+}
+
+.ecu{
+  background: #592A8A;
+  min-height: 100px;
+}
+
+.appState{
+  background: #FFCC00;
+  min-height: 100px;
+}
+
+.virginia{
+  background: #660000;
+  min-height: 100px;
+}
+
+.whites{
+
+}
+
+.whites > h1{
+  color: #ffffff;
+  margin: 0px;
+  padding-top: 30px;
+}

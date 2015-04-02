@@ -2,10 +2,37 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Softball Teams</h2>
-    <ul>
-        {% for team in teams %}
-            <li><a href="{% url 'roster_teams' team.name %}">{{ team.name }}</a> | {{ team.school }}</li>
-        {% endfor %}
-    </ul>
+</div>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1>Choose a Team</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 carolina-dark whites">
+        <h1>Team</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 state whites">
+        <h1>Team</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 ecu whites">
+        <h1>Team</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 appState whites">
+        <h1>Team</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 virginia whites">
+        <h1>Team</h1>
+      </div>
+    </div>
+  </div>
 {% endblock %}

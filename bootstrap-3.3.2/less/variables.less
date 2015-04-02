@@ -24,6 +24,19 @@
 @carolina-dark: darken(@carolina, 20%);
 @carolina-light: lighten(@carolina, 20%);
 
+@state: #CC0000;
+@state-dark: darken(@state, 20%);
+@state-light: lighten(@state, 20%);
+
+@ecuPurple: #592A8A;
+@ecuGold: #FDC82F;
+
+@appGold: #FFCC00;
+@appBlack: #222222;
+
+@virginiaPurple: #660000;
+@virginiaOrg: #FF6600;
+
 
 
 //== Scaffolding
@@ -149,25 +162,25 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #fff;
-@btn-default-bg:                 @carolina;
-@btn-default-border:             white;
+@btn-carolina-color:              #fff;
+@btn-carolina-bg:                 @carolina;
+@btn-carolina-border:             darken(@btn-carolina-bg, 5%);
 
-@btn-primary-color:              #fff;
-@btn-primary-bg:                 @brand-primary;
-@btn-primary-border:             darken(@btn-primary-bg, 5%);
+@btn-state-color:              #fff;
+@btn-state-bg:                 @state;
+@btn-state-border:             darken(@btn-state-bg, 5%);
 
-@btn-success-color:              #fff;
-@btn-success-bg:                 @brand-success;
-@btn-success-border:             darken(@btn-success-bg, 5%);
+@btn-ecu-color:              #fff;
+@btn-ecu-bg:                 @ecuPurple;
+@btn-ecu-border:             darken(@btn-ecu-bg, 5%);
 
-@btn-info-color:                 #fff;
-@btn-info-bg:                    @brand-info;
-@btn-info-border:                darken(@btn-info-bg, 5%);
+@btn-app-color:                 #fff;
+@btn-app-bg:                    @appBlack;
+@btn-app-border:                darken(@btn-app-bg, 5%);
 
-@btn-warning-color:              #fff;
-@btn-warning-bg:                 @brand-warning;
-@btn-warning-border:             darken(@btn-warning-bg, 5%);
+@btn-virginia-color:              #fff;
+@btn-virginia-bg:                 @virginiaPurple;
+@btn-virginia-border:             darken(@btn-virginia-bg, 5%);
 
 @btn-danger-color:               #fff;
 @btn-danger-bg:                  @brand-danger;
@@ -560,17 +573,17 @@
 //##
 
 //** Default label background color
-@label-default-bg:            @carolina;
+@label-carolina-bg:            @carolina;
 //** Primary label background color
-@label-primary-bg:            @carolina-dark;
+@label-dark-bg:            @carolina-dark;
 //** Success label background color
-@label-success-bg:            @brand-success;
+@label-state-bg:            @state;
 //** Info label background color
-@label-info-bg:               @brand-info;
+@label-ecu-bg:               @ecuPurple;
 //** Warning label background color
-@label-warning-bg:            @brand-warning;
+@label-app-bg:            @appBlack;
 //** Danger label background color
-@label-danger-bg:             @brand-danger;
+@label-virginia-bg:             @virginiaPurple;
 
 //** Default label text color
 @label-color:                 #fff;
