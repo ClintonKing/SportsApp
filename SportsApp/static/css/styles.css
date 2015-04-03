@@ -21,6 +21,8 @@
 
   */
 
+
+
 .footer{
   position: relative;
   bottom: 0%;
@@ -65,27 +67,27 @@
   min-height: 100px;
 }
 
-.carolina-dark{
+.Tarheels{
   background: #286c9b;
   min-height: 100px;
 }
 
-.state{
+.Wolfpack{
   background: #CC0000;
   min-height: 100px;
 }
 
-.ecu{
+.Pirates{
   background: #592A8A;
   min-height: 100px;
 }
 
-.appState{
+.Mountaineers{
   background: #FFCC00;
   min-height: 100px;
 }
 
-.virginia{
+.Hokies{
   background: #660000;
   min-height: 100px;
 }
@@ -98,4 +100,26 @@
   color: #ffffff;
   margin: 0px;
   padding-top: 30px;
+  font-family: "Patua One";
+}
+
+.whites > a{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Patua One";
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.logo{
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+
+.patua{
+  font-family: "Patua One";
 }
