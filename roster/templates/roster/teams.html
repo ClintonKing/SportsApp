@@ -1,6 +1,48 @@
 {# in roster/templates/roster/teams.html #}
 {% extends 'base.html' %}
+{% load static from staticfiles %}
 
 {% block content %}
-    <h2> {{ team.name }} | {{ team.school }}</h2>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h1 class="patua"> The {{ team.school }} {{ team.name }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      {% with 'img/teams/'|add:team.name|add:'.png' as teamPic_static %}
+      <img src="{% static teamPic_static %}" class="teamPic img-thumbnail">
+      {% endwith %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Hand</th>
+            <th>Height</th>
+            <th>Year</th>
+            <th>Hometown</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for player in team.players.all %}
+          <tr>
+            <td>{{ player.number }}</td>
+            <td><a href="{% url 'roster_players' player.id %}" class="tableLink">{{ player.name }}</a></td>
+            <td>{{ player.position }}</td>
+            <td>{{ player.hand }}</td>
+            <td>{{ player.height }}</td>
+            <td>{{ player.year }}</td>
+            <td>{{ player.hometown }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
 {% endblock content %}

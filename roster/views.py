@@ -21,7 +21,7 @@ def players(request, pk):
     return render(request, "roster/players.html", {'player': players})
 
 def teamsList(request):
-    teams_list = Team.objects.all()
+    teams_list = Team.objects.all().order_by('pk')
     return render(request, 'roster/teams_list.html', {'teams': teams_list})
 
 def playersList(request):

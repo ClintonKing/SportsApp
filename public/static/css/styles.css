@@ -107,4 +107,19 @@
   color: #ffffff;
   text-decoration: none;
   font-family: "Patua One";
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.logo{
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+
+.patua{
+  font-family: "Patua One";
 }
