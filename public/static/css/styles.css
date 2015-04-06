@@ -120,6 +120,22 @@
   margin-left: 20px;
 }
 
+.teamPic{
+  display: inline;
+  margin: 20px auto 20px auto;
+  float: none;
+}
+
 .patua{
   font-family: "Patua One";
+}
+
+.tableLink,
+.tableLink:hover{
+  color: #333333;
+  text-decoration: none;
+}
+
+.moveRight{
+  margin-left: 50px;
 }

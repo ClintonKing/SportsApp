@@ -1,6 +1,29 @@
 {# in roster/templates/roster/players.html #}
 {% extends 'base.html' %}
+{% load static from staticfiles %}
 
 {% block content %}
-    <h4> {{ player.number }} | {{ player.name }}</h4>
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h1 class="patua"> #{{ player.number}} {{ player.name }} </h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 text-center">
+    {% with 'img/players/'|add:player.name|add:'.jpg' as playerPic_static %}
+    <img src="{% static playerPic_static %}" class="teamPic img-thumbnail">
+    {% endwith %}
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 patua">
+    <div class="moveRight">
+    <h3><b>Position:</b>  {{player.position}}</h3>
+    <h3><b>Hand:</b>  {{player.hand}}</h3>
+    <h3><b>Height:</b>  {{player.height}}</h3>
+    <h3><b>Year:</b>  {{player.year}}</h3>
+    <h3><b>Hometown:</b>  {{player.hometown}}</h3>
+    </div>
+  </div>
+</div>
 {% endblock content %}

@@ -6,7 +6,7 @@
     <h2>All Players</h2>
     <ul>
         {% for player in players %}
-            <li><a href="{% url 'roster_players' player.id %}">{{ player.number }}</a> | {{ player.name }}</li>
+            <li><a href="{% url 'roster_players' player.id %}" class="tableLink patua">#{{ player.number }} {{ player.name }}</a></li>
         {% endfor %}
     </ul>
 {% endblock %}
